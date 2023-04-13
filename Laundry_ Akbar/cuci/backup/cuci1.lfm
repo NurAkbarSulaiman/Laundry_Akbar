@@ -1,0 +1,162 @@
+object Form1: TForm1
+  Left = 1302
+  Height = 572
+  Top = 348
+  Width = 636
+  Caption = 'Form1'
+  ClientHeight = 572
+  ClientWidth = 636
+  DesignTimePPI = 144
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 204
+    Height = 45
+    Top = 12
+    Width = 239
+    Caption = 'Aplikasi Laundry'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -32
+    Font.Name = 'Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit1: TEdit
+    Left = 60
+    Height = 36
+    Top = 156
+    Width = 219
+    Font.Height = -20
+    OnChange = Edit1Change
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 60
+    Height = 28
+    Top = 120
+    Width = 220
+    Caption = 'Jumlah Laundry per Kilo'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -20
+    Font.Name = 'Yu Gothic UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object CheckGroup1: TCheckGroup
+    Left = 60
+    Height = 132
+    Top = 252
+    Width = 278
+    AutoFill = True
+    Caption = 'Pilih Menu Laundry'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 102
+    ClientWidth = 274
+    TabOrder = 1
+    object RadioButton1: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 6
+      Width = 262
+      Caption = 'Cuci Lipat'
+      OnChange = RadioButton1Change
+      TabOrder = 0
+    end
+    object RadioButton2: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 36
+      Width = 262
+      Caption = 'Cuci Lipat Sterika'
+      OnChange = RadioButton2Change
+      TabOrder = 1
+    end
+    object RadioButton3: TRadioButton
+      Left = 6
+      Height = 30
+      Top = 66
+      Width = 262
+      Caption = 'Cuci Lipat Sterika Cepat'
+      OnChange = RadioButton3Change
+      TabOrder = 2
+    end
+  end
+  object Button1: TButton
+    Left = 432
+    Height = 38
+    Top = 264
+    Width = 112
+    Caption = 'Hitung'
+    OnClick = Button1Click
+    TabOrder = 2
+  end
+  object Button2: TButton
+    Left = 432
+    Height = 38
+    Top = 336
+    Width = 112
+    Caption = 'Setel Ulang'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object Button3: TButton
+    Left = 480
+    Height = 38
+    Top = 492
+    Width = 112
+    Caption = 'Keluar'
+    OnClick = Button3Click
+    TabOrder = 4
+  end
+  object Label3: TLabel
+    Left = 336
+    Height = 28
+    Top = 144
+    Width = 124
+    Caption = 'Harga Per KG :'
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Harga: TLabel
+    Left = 504
+    Height = 1
+    Top = 144
+    Width = 1
+    Font.Height = -20
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 60
+    Height = 40
+    Top = 420
+    Width = 161
+    Caption = 'Harga Total :'
+    Font.Height = -29
+    ParentColor = False
+    ParentFont = False
+  end
+  object Total: TLabel
+    Left = 240
+    Height = 1
+    Top = 420
+    Width = 1
+    Font.Height = -29
+    ParentColor = False
+    ParentFont = False
+  end
+end
